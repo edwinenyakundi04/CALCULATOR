@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>calculator</title>
+    <style>
+    .screen{
+        background-color:white;
+        text-align: center;
+        width: 120px;
+        height: 30px;
+    }
+    h1{
+        text-align: center;
+        color: black;
+    }
+    body{
+        background-color:green;
+    }
+    .keys{
+        color: aliceblue;
+    }
+    .button{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color:yellow;
+    }
+    .cal2{
+        width: 250px;
+        height: 300px;
+        background-color: blue;
+    }
+    </style>
+    <script src="calc.js"></script>
+</head>
+<body>
+    <center>
+
+        <div class="cal2">
+        <h1>CALCULATOR APP</h1>
+        <table>
+            <tr>
+                <td>
+                    <span>
+                    <input type="text"id="result"class="screen">
+                    <input type="button"value="cl"class="button"onclick="clearscreen()">
+                    </span>
+                </td>
+            </tr>
+        </table>
+        <div class="keys">
+          <span>  <input type="button"value="0"class="button"onclick="display('0')">
+            <input type="button"value="1"class="button"onclick="display('1')">
+            <input type="button"value="2"class="button"onclick="display('2')">
+            <input type="button"value="3"class="button"onclick="display('3')">
+            <input type="button"value="*"class="button"onclick="display('*')">
+            
+
+</span>
+<div>
+<span>  <input type="button"value="4"class="button"onclick="display('4')">
+    <input type="button"value="5"class="button"onclick="display('5')">
+    <input type="button"value="6"class="button"onclick="display('6')">
+    <input type="button"value="7"class="button"onclick="display('7')">
+    <input type="button"value="+"class="button"onclick="display('+')">
+
+
+</span>
+</div>
+<div>
+<span>  <input type="button"value="8"class="button"onclick="display('8')">
+    <input type="button"value="9"class="button"onclick="display('9')">
+    <input type="button"value="-"class="button"onclick="display('-')">
+    <input type="button"value="/"class="button"onclick="display('/')">
+    <input type="button"value="sin"class="button"onclick="display('sin')"><br />
+    <input type="button"value="."class="button"onclick="display('.')">
+    <input type="button"value="^"class="button"onclick="display('^')">
+
+
+    <input type="button"value="tan"class="button"onclick="display('tan')">
+    <input type="button"value="log"class="button"onclick="display('log')">
+    
+
+
+    <button class="button"onclick="answer()">=</button>
+    
+
+</span>
+</div>
+        </div>
+        </div>
+    </center>
+</body>
+</html>
